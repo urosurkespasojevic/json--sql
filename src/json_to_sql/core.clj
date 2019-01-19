@@ -1,5 +1,7 @@
 (ns json-to-sql.core
-  (:require [json-to-sql.builder :as builder]))
+  (:require [json-to-sql.insert :as insert]
+            [json-to-sql.update :as update]
+            [cheshire.core]))
 
 (defn json->select
   [json]
@@ -9,7 +11,7 @@
 (defn json->insert
   []
   "Converts json to SQL INSERT statement"
-  (builder/build-statement "insert" "Users" {:name "Pera" :address "Fake Street 213"}))
+  (insert/statement "Users" {:name "Pera" :address "Fake Street 213" :link 2}))
 
 (defn json->update
   [json]
