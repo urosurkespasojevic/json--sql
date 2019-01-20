@@ -1,0 +1,15 @@
+{
+  "Users": {
+    "name": "Joe Doe",
+    "address": "Fake street 123",
+    "date_of_birth": "01.01.1900",
+    "is_admin": true,
+    "card_no": 123
+  },
+  "conditions": {
+    "id": {
+      "operation": "eq",
+      "value": 1
+    }
+  }
+}

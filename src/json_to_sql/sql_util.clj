@@ -1,4 +1,4 @@
-(ns json-to-sql.util
+(ns json-to-sql.sql-util
   (:require [clojure.string :as s]))
 
 (defn map->sql

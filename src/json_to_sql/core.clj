@@ -1,7 +1,14 @@
 (ns json-to-sql.core
   (:require [json-to-sql.insert :as insert]
             [json-to-sql.update :as update]
-            [cheshire.core]))
+            [json-to-sql.json-util :as json-util]))
+
+(def insert-json-file "resources\\insert.json")
+(def update-json-file "resources\\update.json")
+
+(defn read-json
+  [filename]
+  (cheshire/parse-string (slurp filename) true))
 
 (defn json->select
   [json]
@@ -9,13 +16,14 @@
   (println "json->select"))
 
 (defn json->insert
-  []
+  [json]
   "Converts json to SQL INSERT statement"
-  (insert/statement "Users"
-                    {:name "Pera",
-                     :address "Fake Street 213",
-                     :link 2,
-                     :admin false}))
+  (let [map (json-util/json->map json)
+        table-name-keyword (json-util/get-table-name-keyword map)
+        data (table-name-keyword map)]
+    (insert/statement (name table-name-keyword) data)))
+
+
 
 (defn json->update
   [json]

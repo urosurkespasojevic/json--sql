@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59e8d504-b30e-4206-b9e9-d4ea7d1a29bd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/insert.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/update.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.clj" beforeDir="false" afterPath="$PROJECT_DIR$/project.clj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/json_to_sql/core.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/json_to_sql/core.clj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/json_to_sql/util.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/json_to_sql/util.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/json_to_sql/insert.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/json_to_sql/insert.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/json_to_sql/update.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/json_to_sql/update.clj" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,35 +20,41 @@
     <session id="-2102177168">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="clj" value="16" />
+          <entry key="clj" value="17" />
+          <entry key="json" value="2" />
           <entry key="md" value="1" />
+          <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Clojure" value="16" />
+          <entry key="Clojure" value="17" />
+          <entry key="JSON" value="2" />
           <entry key="PLAIN_TEXT" value="1" />
+          <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="clj" value="6735" />
+          <entry key="clj" value="7713" />
+          <entry key="json" value="241" />
           <entry key="md" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Clojure" value="6735" />
+          <entry key="Clojure" value="7713" />
+          <entry key="JSON" value="241" />
           <entry key="Markdown" value="25" />
         </counts>
       </usages-collector>
@@ -55,8 +65,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/json_to_sql/core.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+            <state relative-caret-position="391">
+              <caret line="23" column="55" lean-forward="true" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -64,8 +74,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/json_to_sql/update.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            <state>
+              <caret column="23" selection-start-column="23" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -73,17 +83,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/json_to_sql/insert.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+            <state relative-caret-position="224">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/json_to_sql/util.clj">
+        <entry file="file://$PROJECT_DIR$/src/json_to_sql/json_util.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+            <state relative-caret-position="136">
+              <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/json_to_sql/sql_util.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/insert.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="8" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/update.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -91,8 +128,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="26" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="26" />
+            <state relative-caret-position="119">
+              <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -118,16 +155,20 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/doc/intro.md" />
-        <option value="$PROJECT_DIR$/project.clj" />
         <option value="$PROJECT_DIR$/src/json_to_sql/query_templates.clj" />
         <option value="$PROJECT_DIR$/src/json_to_sql/templates.clj" />
         <option value="$PROJECT_DIR$/src/json_to_sql/converter.clj" />
         <option value="$PROJECT_DIR$/src/json_to_sql/builder.clj" />
         <option value="$PROJECT_DIR$/src/json_to_sql/template.clj" />
-        <option value="$PROJECT_DIR$/src/json_to_sql/insert.clj" />
-        <option value="$PROJECT_DIR$/src/json_to_sql/update.clj" />
         <option value="$PROJECT_DIR$/src/json_to_sql/util.clj" />
+        <option value="$PROJECT_DIR$/resources/insert.json" />
+        <option value="$PROJECT_DIR$/project.clj" />
+        <option value="$PROJECT_DIR$/resources/update.json" />
+        <option value="$PROJECT_DIR$/src/json_to_sql/sql_util.clj" />
+        <option value="$PROJECT_DIR$/src/json_to_sql/insert.clj" />
+        <option value="$PROJECT_DIR$/src/json_to_sql/json_util.clj" />
         <option value="$PROJECT_DIR$/src/json_to_sql/core.clj" />
+        <option value="$PROJECT_DIR$/src/json_to_sql/update.clj" />
       </list>
     </option>
   </component>
@@ -149,6 +190,34 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="json-to-sql" type="b2602c69:ProjectViewProjectNode" />
+              <item name="json-to-sql" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="json-to-sql" type="b2602c69:ProjectViewProjectNode" />
+              <item name="json-to-sql" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="json-to-sql" type="b2602c69:ProjectViewProjectNode" />
+              <item name="json-to-sql" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="json-to-sql" type="b2602c69:ProjectViewProjectNode" />
+              <item name="json-to-sql" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="json_to_sql" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -171,40 +240,17 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="json-to-sql" type="b2602c69:ProjectViewProjectNode" />
-              <item name="json-to-sql" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="json-to-sql" type="b2602c69:ProjectViewProjectNode" />
-              <item name="json-to-sql" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="json-to-sql" type="b2602c69:ProjectViewProjectNode" />
-              <item name="json-to-sql" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="json_to_sql" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547943145954" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547997390859" />
     <property name="cursive.last.file.extension.D\:/Master/Clojure/json-to-sql/src" value="clj" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="ReplState" timestamp="1547943371564">{:repl-history {:ide [], :local [{:command &quot;(keys {:or 1 :and 2})&quot;, :offset 21, :ns &quot;user&quot;} {:command &quot;(first \&quot;abc\&quot;)&quot;, :offset 13, :ns &quot;user&quot;} {:command &quot;()&quot;, :offset 2} {:command &quot;(toUpper. (first \&quot;abc\&quot;))&quot;, :offset 24, :ns &quot;user&quot;} {:command &quot;(contains? {:a 1} :a)&quot;, :offset 21, :ns &quot;user&quot;} {:command &quot;(if (contains? {:operation 1} :operation)\n  \&quot;true\&quot;\n  \&quot;false\&quot;)&quot;, :offset 61, :ns &quot;user&quot;} {:command &quot;(if (contains? {:operation 1} :operation)\n  (println \&quot;true\&quot;)\n  (println \&quot;false\&quot;))&quot;, :offset 81, :ns &quot;user&quot;} {:command &quot;(if (contains? {:operation 1} :operation)\n  1\n  0)&quot;, :offset 50, :ns &quot;user&quot;} {:command &quot;(str (\&quot;a\&quot; ))&quot;, :offset 12, :ns &quot;user&quot;} {:command &quot;(str (\&quot;a\&quot; \&quot;b\&quot;))&quot;, :offset 15, :ns &quot;user&quot;} {:command &quot;(str [\&quot;a\&quot; \&quot;b\&quot;])&quot;, :offset 15, :ns &quot;user&quot;} {:command &quot;(keywords {:a 1 :b 2})&quot;, :offset 22, :ns &quot;user&quot;} {:command &quot;(keyword {:a 1 :b 2})&quot;, :offset 8, :ns &quot;user&quot;} {:command &quot;(keys {:a 1 :b 2})&quot;, :offset 18, :ns &quot;user&quot;} {:command &quot;(vals {:a 1 :b 2})&quot;, :offset 18, :ns &quot;user&quot;} {:command &quot;(map str (\&quot;a\&quot; \&quot;b\&quot;))&quot;, :offset 19, :ns &quot;user&quot;} {:command &quot;(map str [\&quot;a\&quot; \&quot;b\&quot;])&quot;, :offset 19, :ns &quot;user&quot;} {:command &quot;(clojure.string/join [\&quot;a\&quot; \&quot;b\&quot;] \&quot;,\&quot;)&quot;, :offset 35, :ns &quot;user&quot;} {:command &quot;(clojure.string/join (\&quot;a\&quot; \&quot;b\&quot;) \&quot;,\&quot;)&quot;, :offset 35, :ns &quot;user&quot;} {:command &quot;(clojure.string/join \&quot;,\&quot; (\&quot;a\&quot; \&quot;b\&quot;))&quot;, :offset 35, :ns &quot;user&quot;} {:command &quot;(clojure.string/join \&quot;,\&quot; [\&quot;a\&quot; \&quot;b\&quot;])&quot;, :offset 35, :ns &quot;user&quot;} {:command &quot;(str #\&quot;\&quot; \&quot;{\&quot; \&quot;a\&quot; \&quot;}\&quot;)&quot;, :offset 21, :ns &quot;user&quot;} {:command &quot;(clojure.string/replace \&quot;{a}\&quot; (str \&quot;{\&quot; \&quot;a\&quot; \&quot;}\&quot;) \&quot;blue\&quot;)&quot;, :offset 55, :ns &quot;user&quot;} {:command &quot;(ns json-to-sql.builder)&quot;, :offset 24, :ns &quot;json-to-sql.core&quot;} {:command &quot;(util/format (:insert template/statements) (:column_values template/placeholders) (seq (keys {:name \&quot;Pera\&quot;,\n                                                                                              :address \&quot;Fake Street 213\&quot;}))&quot;, :offset 231, :ns &quot;json-to-sql.builder&quot;} {:command &quot;(util/format (:insert template/statements) (:column_values template/placeholders) (seq (keys {:name \&quot;Pera\&quot;, :address \&quot;Fake Street 213\&quot;}))&quot;, :offset 137, :ns &quot;json-to-sql.builder&quot;} {:command &quot;(util/format (:insert template/statements) (:column_values template/placeholders) (seq (keys {:name \&quot;pera\&quot; :address \&quot;peric\&quot;})))&quot;, :offset 127, :ns &quot;json-to-sql.builder&quot;} {:command &quot;(util/format (:insert template/statements) (:column_values template/placeholders) (keys {:name \&quot;pera\&quot; :address \&quot;peric\&quot;}))&quot;, :offset 121, :ns &quot;json-to-sql.builder&quot;} {:command &quot;(keys {:name \&quot;pera\&quot; :address \&quot;peric\&quot;})&quot;, :offset 38, :ns &quot;json-to-sql.builder&quot;} {:command &quot;(util/format (:insert template/statements) (:column_values template/placeholders) (str (keys {:name \&quot;pera\&quot; :address \&quot;peric\&quot;})))&quot;, :offset 127, :ns &quot;json-to-sql.builder&quot;} {:command &quot;(util/format (:insert template/statements) (:column_values template/placeholders) (util/get-column- {:name \&quot;pera\&quot; :address \&quot;peric\&quot;}))&quot;, :offset 133, :ns &quot;json-to-sql.builder&quot;} {:command &quot;(util/format (:insert template/statements) (:column_values template/placeholders) (util/get-column-values {:name \&quot;pera\&quot; :address \&quot;peric\&quot;}))&quot;, :offset 139, :ns &quot;json-to-sql.builder&quot;} {:command &quot;(defn json-&gt;insert\n  []\n  \&quot;Converts json to SQL INSERT statement\&quot;\n  (builder/build-statement \&quot;insert\&quot; \&quot;Users\&quot; {\n                                             :name \&quot;Pera\&quot;,\n                                             :address \&quot;Fake Street 213\&quot;\n                                             }))&quot;, :offset 291, :ns &quot;json-to-sql.core&quot;} {:command &quot;(ns json-to-sql.core\n  )&quot;, :offset 24, :ns &quot;user&quot;} {:command &quot;(seq (map name (vals {:a 1 :b})))&quot;, :offset 33, :ns &quot;json-to-sql.core&quot;} {:command &quot;(vals {:a })&quot;, :offset 10} {:command &quot;(seq (map name (vals {:a 1 :b 2})))&quot;, :offset 35, :ns &quot;json-to-sql.core&quot;} {:command &quot;(seq (map name (keys {:a 1 :b 2})))&quot;, :offset 35, :ns &quot;json-to-sql.core&quot;} {:command &quot;(into [] (map name (keys {:a 1 :b 2})))&quot;, :offset 39, :ns &quot;json-to-sql.core&quot;} {:command &quot;(s/join \&quot;,\&quot; (into [] (map name (keys map))))&quot;, :offset 44, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (into [] (map name (keys map))))&quot;, :offset 58, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (into [] (apply name (keys map))))&quot;, :offset 60, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (into [] (apply name (keys {:a 1 :b 2}))))&quot;, :offset 68, :ns &quot;json-to-sql.core&quot;} {:command &quot;(map name (keys {:name \&quot;asddsa\&quot; :address \&quot;asdads\&quot;}))&quot;, :offset 52, :ns &quot;json-to-sql.core&quot;} {:command &quot;(into [] (map name (keys {:name \&quot;asddsa\&quot; :address \&quot;asdads\&quot;})))&quot;, :offset 62, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (into [] (map name (keys {:name \&quot;asddsa\&quot; :address \&quot;asdads\&quot;}))))&quot;, :offset 89, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/replace \&quot;aaa {a} bbb\&quot; \&quot;{a}\&quot; (clojure.string/join \&quot;, \&quot; (into [] (map name (keys {:name \&quot;asddsa\&quot; :address \&quot;asdads\&quot;})))))&quot;, :offset 134, :ns &quot;json-to-sql.core&quot;} {:command &quot;(s/join \&quot;, \&quot; (into [] (map name (keys {:a 1 :b 2}))))&quot;, :offset 53, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (into [] (map name (keys {:a 1 :b 2}))))&quot;, :offset 66, :ns &quot;json-to-sql.core&quot;} {:command &quot;(json-to-sql.util/get-column-names {:a 1 :b 2})&quot;, :offset 47, :ns &quot;json-to-sql.core&quot;} {:command &quot;(json-to-sql.util/get-column-names {:a 1, :b 2})&quot;, :offset 48, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (seq (map name (keys {:a 1 :b 2}))))&quot;, :offset 62, :ns &quot;json-to-sql.core&quot;} {:command &quot;(defn get-column-names\n  \&quot;Gets string of column names joined with ,\&quot;\n  [map]\n  (s/join \&quot;, \&quot; (seq (map name (keys map)))))&quot;, :offset 121, :ns &quot;json-to-sql.core&quot;} {:command &quot;(defn get-column-names\n  \&quot;Gets string of column names joined with ,\&quot;\n  [map]\n  (clojure.string/join \&quot;, \&quot; (seq (map name (keys map)))))&quot;, :offset 134, :ns &quot;json-to-sql.core&quot;} {:command &quot;(get-column-names {:a 1, :b 2})&quot;, :offset 31, :ns &quot;json-to-sql.core&quot;} {:command &quot;(map {:a 1, :b 2})&quot;, :offset 18, :ns &quot;json-to-sql.core&quot;} {:command &quot;(map name {:a 1, :b 2})&quot;, :offset 23, :ns &quot;json-to-sql.core&quot;} {:command &quot;(map name (keys {:a 1, :b 2}))&quot;, :offset 30, :ns &quot;json-to-sql.core&quot;} {:command &quot;(seq (map name (keys {:a 1, :b 2})))&quot;, :offset 36, :ns &quot;json-to-sql.core&quot;} {:command &quot;(into [] (map name (keys {:a 1, :b 2})))&quot;, :offset 40, :ns &quot;json-to-sql.core&quot;} {:command &quot;(map #(s/replace % #\&quot;^:\&quot; \&quot;\&quot;) (keys {:a 1 :b 2}))&quot;, :offset 48, :ns &quot;json-to-sql.core&quot;} {:command &quot;(map #(clojure.string/replace % #\&quot;^:\&quot; \&quot;\&quot;) (keys {:a 1 :b 2}))&quot;, :offset 61, :ns &quot;json-to-sql.core&quot;} {:command &quot;(into [] (map #(clojure.string/replace % #\&quot;^:\&quot; \&quot;\&quot;) (keys {:a 1 :b 2})))&quot;, :offset 71, :ns &quot;json-to-sql.core&quot;} {:command &quot;(ns json-to-sql.core\n  (:require [json-to-sql.builder :as builder]))&quot;, :offset 68, :ns &quot;user&quot;} {:command &quot;(name :x)&quot;, :offset 9, :ns &quot;json-to-sql.core&quot;} {:command &quot;(map name (keys {:a \&quot;aaa\&quot; :b \&quot;aaa\&quot;}))&quot;, :offset 37, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (map name (keys {:a \&quot;aaa\&quot; :b \&quot;aaa\&quot;})))&quot;, :offset 64, :ns &quot;json-to-sql.core&quot;} {:command &quot;(keys {:a 1 :b 1})&quot;, :offset 18, :ns &quot;json-to-sql.core&quot;} {:command &quot;(let [keys (keys {:aa 1 :bbsa \&quot;asd\&quot;})\n      mapped-keys (into [] (map name keys))]\n  (s/join \&quot;, \&quot; mapped-keys))&quot;, :offset 37, :ns &quot;json-to-sql.core&quot;} {:command &quot;(let [keys (keys {:aa 1 :bbsa \&quot;asd\&quot;})\n      mapped-keys (into [] (map name keys))]\n  (clojure.string/join \&quot;, \&quot; mapped-keys))&quot;, :offset 100, :ns &quot;json-to-sql.core&quot;} {:command &quot;(ns json-to-sql.core)&quot;, :offset 21, :ns &quot;user&quot;} {:command &quot;(str \&quot;''\&quot; \&quot;a\&quot;)&quot;, :offset 14, :ns &quot;json-to-sql.core&quot;} {:command &quot;(string? \&quot;Pera\&quot;)&quot;, :offset 16, :ns &quot;json-to-sql.core&quot;} {:command &quot;(str \&quot;'\&quot; \&quot;aa\&quot; \&quot;'\&quot;)&quot;, :offset 18, :ns &quot;json-to-sql.core&quot;} {:command &quot;(for [val (vals {\&quot;name\&quot; \&quot;a\&quot; \&quot;address\&quot; \&quot;b\&quot; \&quot;link\&quot; 2})]\n  (if (string? (type val))\n    (str \&quot;'\&quot; val \&quot;'\&quot;)\n    val))&quot;, :offset 112, :ns &quot;json-to-sql.core&quot;} {:command &quot;(s/join \&quot;, \&quot; (for [val (vals {\&quot;name\&quot; \&quot;a\&quot; \&quot;address\&quot; \&quot;b\&quot; \&quot;link\&quot; 2})]\n               (if (string? (type val))\n                 (str \&quot;'\&quot; val \&quot;'\&quot;)\n                 val)))&quot;, :offset 165, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (for [val (vals {\&quot;name\&quot; \&quot;a\&quot; \&quot;address\&quot; \&quot;b\&quot; \&quot;link\&quot; 2})]\n               (if (string? (type val))\n                 (str \&quot;'\&quot; val \&quot;'\&quot;)\n                 val)))&quot;, :offset 178, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (for [val (vals {\&quot;name\&quot; \&quot;a\&quot; \&quot;address\&quot; \&quot;b\&quot; \&quot;link\&quot; 2})]\n               (if (string? (type val))\n                 (str \&quot;\\'\&quot; val \&quot;\\'\&quot;)\n                 val)))&quot;, :offset 180, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (for [val (vals {\&quot;name\&quot; \&quot;a\&quot; \&quot;address\&quot; \&quot;b\&quot; \&quot;link\&quot; 2})]\n               (if (string? (type val))\n                 (str \&quot;''\&quot; val \&quot;''\&quot;)\n                 val)))&quot;, :offset 180, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (for [val (vals {\&quot;name\&quot; \&quot;a\&quot; \&quot;address\&quot; \&quot;b\&quot; \&quot;link\&quot; 2})]\n               (if (string? (type val))\n                 (str \&quot;'\\\&quot; val \&quot;'\\\&quot;)\n                 val)))&quot;, :offset 180, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (for [val (vals {\&quot;name\&quot; \&quot;a\&quot; \&quot;address\&quot; \&quot;b\&quot; \&quot;link\&quot; 2})]\n               (if (string? (type val))\n                 (str \&quot;\&quot; val \&quot;'\&quot;)\n                 val)))&quot;, :offset 177, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (for [val (vals {\&quot;name\&quot; \&quot;a\&quot; \&quot;address\&quot; \&quot;b\&quot; \&quot;link\&quot; 2})]\n               (if (string? (type val))\n                 (clojure.string/join \&quot;''\&quot; val)\n                 val)))&quot;, :offset 191, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (for [val (vals {\&quot;name\&quot; \&quot;a\&quot; \&quot;address\&quot; \&quot;b\&quot; \&quot;link\&quot; 2})]\n               (if (string? (type val))\n                 (str \&quot;\\''\&quot; val \&quot;\\''\&quot;)\n                 val)))&quot;, :offset 182, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (for [val (vals {\&quot;name\&quot; \&quot;a\&quot; \&quot;address\&quot; \&quot;b\&quot; \&quot;link\&quot; 2})]\n               (if (string? (type val))\n                 (str \&quot;\\'\\\&quot; val \&quot;\\'\\\&quot;)\n                 val)))&quot;, :offset 182, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (for [val (vals {\&quot;name\&quot; \&quot;a\&quot; \&quot;address\&quot; \&quot;b\&quot; \&quot;link\&quot; 2})]\n               (if (string? (type val))\n                 (str \&quot;`\&quot; val \&quot;`\&quot;)\n                 val)))&quot;, :offset 178, :ns &quot;json-to-sql.core&quot;} {:command &quot;(str \&quot;'a'\&quot; \&quot;b\&quot;)&quot;, :offset 15, :ns &quot;json-to-sql.core&quot;} {:command &quot;(keyword? :a)&quot;, :offset 13, :ns &quot;json-to-sql.core&quot;} {:command &quot;(str \&quot;'aa'\&quot; \&quot;b\&quot;)&quot;, :offset 16, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (for [val (vals {\&quot;name\&quot; \&quot;a\&quot; \&quot;address\&quot; \&quot;b\&quot; \&quot;link\&quot; 2})]\n               (if (string? (type val))\n                 (str \&quot;\\\&quot;\&quot; val \&quot;\\\&quot;\&quot;)\n                 val)))&quot;, :offset 180, :ns &quot;json-to-sql.core&quot;} {:command &quot;(for [val (vals {\&quot;name\&quot; \&quot;a\&quot; \&quot;address\&quot; \&quot;b\&quot; \&quot;link\&quot; 2})]\n  (if (string? (type val))\n    ((println str \&quot;\\\&quot;\&quot; val \&quot;\\\&quot;\&quot;)\n      (str \&quot;\\\&quot;\&quot; val \&quot;\\\&quot;\&quot;))\n    val))&quot;, :offset 150, :ns &quot;json-to-sql.core&quot;} {:command &quot;(json-&gt;insert)&quot;, :offset 14, :ns &quot;json-to-sql.core&quot;} {:command &quot;(name :key)&quot;, :offset 11, :ns &quot;json-to-sql.core&quot;} {:command &quot;(for [key (keys {:aaa \&quot;asdsa\&quot; :bbb \&quot;asddsa\&quot;})]\n  (name key))&quot;, :offset 60, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (seq (for [key (keys map)]\n                                 (name key))))&quot;, :offset 99, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (into [] (for [key (keys map)]\n                                 (name key))))&quot;, :offset 103, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (map seq (for [key (keys map)]\n                                 (name key))))&quot;, :offset 103, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (for [key (keys map)]\n                            (name key)))&quot;, :offset 88, :ns &quot;json-to-sql.core&quot;} {:command &quot;(map inc {:a 1 :b 2})&quot;, :offset 21, :ns &quot;json-to-sql.core&quot;} {:command &quot;(map inc (seq {:a 1 :b 2}))&quot;, :offset 27, :ns &quot;json-to-sql.core&quot;} {:command &quot;(map inc (into [] {:a 1 :b 2}))&quot;, :offset 17, :ns &quot;json-to-sql.core&quot;}], :remote []}}</component>
+  <component name="ReplState" timestamp="1547997285658">{:repl-history {:ide [], :local [{:command &quot;(clojure.string/replace \&quot;{a}\&quot; (str \&quot;{\&quot; \&quot;a\&quot; \&quot;}\&quot;) \&quot;blue\&quot;)&quot;, :offset 55, :ns &quot;user&quot;} {:command &quot;(ns json-to-sql.builder)&quot;, :offset 24, :ns &quot;json-to-sql.core&quot;} {:command &quot;(util/format (:insert template/statements) (:column_values template/placeholders) (seq (keys {:name \&quot;Pera\&quot;,\n                                                                                              :address \&quot;Fake Street 213\&quot;}))&quot;, :offset 231, :ns &quot;json-to-sql.builder&quot;} {:command &quot;(util/format (:insert template/statements) (:column_values template/placeholders) (seq (keys {:name \&quot;Pera\&quot;, :address \&quot;Fake Street 213\&quot;}))&quot;, :offset 137, :ns &quot;json-to-sql.builder&quot;} {:command &quot;(util/format (:insert template/statements) (:column_values template/placeholders) (seq (keys {:name \&quot;pera\&quot; :address \&quot;peric\&quot;})))&quot;, :offset 127, :ns &quot;json-to-sql.builder&quot;} {:command &quot;(util/format (:insert template/statements) (:column_values template/placeholders) (keys {:name \&quot;pera\&quot; :address \&quot;peric\&quot;}))&quot;, :offset 121, :ns &quot;json-to-sql.builder&quot;} {:command &quot;(keys {:name \&quot;pera\&quot; :address \&quot;peric\&quot;})&quot;, :offset 38, :ns &quot;json-to-sql.builder&quot;} {:command &quot;(util/format (:insert template/statements) (:column_values template/placeholders) (str (keys {:name \&quot;pera\&quot; :address \&quot;peric\&quot;})))&quot;, :offset 127, :ns &quot;json-to-sql.builder&quot;} {:command &quot;(util/format (:insert template/statements) (:column_values template/placeholders) (util/get-column- {:name \&quot;pera\&quot; :address \&quot;peric\&quot;}))&quot;, :offset 133, :ns &quot;json-to-sql.builder&quot;} {:command &quot;(util/format (:insert template/statements) (:column_values template/placeholders) (util/get-column-values {:name \&quot;pera\&quot; :address \&quot;peric\&quot;}))&quot;, :offset 139, :ns &quot;json-to-sql.builder&quot;} {:command &quot;(defn json-&gt;insert\n  []\n  \&quot;Converts json to SQL INSERT statement\&quot;\n  (builder/build-statement \&quot;insert\&quot; \&quot;Users\&quot; {\n                                             :name \&quot;Pera\&quot;,\n                                             :address \&quot;Fake Street 213\&quot;\n                                             }))&quot;, :offset 291, :ns &quot;json-to-sql.core&quot;} {:command &quot;(ns json-to-sql.core\n  )&quot;, :offset 24, :ns &quot;user&quot;} {:command &quot;(seq (map name (vals {:a 1 :b})))&quot;, :offset 33, :ns &quot;json-to-sql.core&quot;} {:command &quot;(vals {:a })&quot;, :offset 10} {:command &quot;(seq (map name (vals {:a 1 :b 2})))&quot;, :offset 35, :ns &quot;json-to-sql.core&quot;} {:command &quot;(seq (map name (keys {:a 1 :b 2})))&quot;, :offset 35, :ns &quot;json-to-sql.core&quot;} {:command &quot;(into [] (map name (keys {:a 1 :b 2})))&quot;, :offset 39, :ns &quot;json-to-sql.core&quot;} {:command &quot;(s/join \&quot;,\&quot; (into [] (map name (keys map))))&quot;, :offset 44, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (into [] (map name (keys map))))&quot;, :offset 58, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (into [] (apply name (keys map))))&quot;, :offset 60, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (into [] (apply name (keys {:a 1 :b 2}))))&quot;, :offset 68, :ns &quot;json-to-sql.core&quot;} {:command &quot;(map name (keys {:name \&quot;asddsa\&quot; :address \&quot;asdads\&quot;}))&quot;, :offset 52, :ns &quot;json-to-sql.core&quot;} {:command &quot;(into [] (map name (keys {:name \&quot;asddsa\&quot; :address \&quot;asdads\&quot;})))&quot;, :offset 62, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (into [] (map name (keys {:name \&quot;asddsa\&quot; :address \&quot;asdads\&quot;}))))&quot;, :offset 89, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/replace \&quot;aaa {a} bbb\&quot; \&quot;{a}\&quot; (clojure.string/join \&quot;, \&quot; (into [] (map name (keys {:name \&quot;asddsa\&quot; :address \&quot;asdads\&quot;})))))&quot;, :offset 134, :ns &quot;json-to-sql.core&quot;} {:command &quot;(s/join \&quot;, \&quot; (into [] (map name (keys {:a 1 :b 2}))))&quot;, :offset 53, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (into [] (map name (keys {:a 1 :b 2}))))&quot;, :offset 66, :ns &quot;json-to-sql.core&quot;} {:command &quot;(json-to-sql.util/get-column-names {:a 1 :b 2})&quot;, :offset 47, :ns &quot;json-to-sql.core&quot;} {:command &quot;(json-to-sql.util/get-column-names {:a 1, :b 2})&quot;, :offset 48, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (seq (map name (keys {:a 1 :b 2}))))&quot;, :offset 62, :ns &quot;json-to-sql.core&quot;} {:command &quot;(defn get-column-names\n  \&quot;Gets string of column names joined with ,\&quot;\n  [map]\n  (s/join \&quot;, \&quot; (seq (map name (keys map)))))&quot;, :offset 121, :ns &quot;json-to-sql.core&quot;} {:command &quot;(defn get-column-names\n  \&quot;Gets string of column names joined with ,\&quot;\n  [map]\n  (clojure.string/join \&quot;, \&quot; (seq (map name (keys map)))))&quot;, :offset 134, :ns &quot;json-to-sql.core&quot;} {:command &quot;(get-column-names {:a 1, :b 2})&quot;, :offset 31, :ns &quot;json-to-sql.core&quot;} {:command &quot;(map {:a 1, :b 2})&quot;, :offset 18, :ns &quot;json-to-sql.core&quot;} {:command &quot;(map name {:a 1, :b 2})&quot;, :offset 23, :ns &quot;json-to-sql.core&quot;} {:command &quot;(map name (keys {:a 1, :b 2}))&quot;, :offset 30, :ns &quot;json-to-sql.core&quot;} {:command &quot;(seq (map name (keys {:a 1, :b 2})))&quot;, :offset 36, :ns &quot;json-to-sql.core&quot;} {:command &quot;(into [] (map name (keys {:a 1, :b 2})))&quot;, :offset 40, :ns &quot;json-to-sql.core&quot;} {:command &quot;(map #(s/replace % #\&quot;^:\&quot; \&quot;\&quot;) (keys {:a 1 :b 2}))&quot;, :offset 48, :ns &quot;json-to-sql.core&quot;} {:command &quot;(map #(clojure.string/replace % #\&quot;^:\&quot; \&quot;\&quot;) (keys {:a 1 :b 2}))&quot;, :offset 61, :ns &quot;json-to-sql.core&quot;} {:command &quot;(into [] (map #(clojure.string/replace % #\&quot;^:\&quot; \&quot;\&quot;) (keys {:a 1 :b 2})))&quot;, :offset 71, :ns &quot;json-to-sql.core&quot;} {:command &quot;(ns json-to-sql.core\n  (:require [json-to-sql.builder :as builder]))&quot;, :offset 68, :ns &quot;user&quot;} {:command &quot;(name :x)&quot;, :offset 9, :ns &quot;json-to-sql.core&quot;} {:command &quot;(map name (keys {:a \&quot;aaa\&quot; :b \&quot;aaa\&quot;}))&quot;, :offset 37, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (map name (keys {:a \&quot;aaa\&quot; :b \&quot;aaa\&quot;})))&quot;, :offset 64, :ns &quot;json-to-sql.core&quot;} {:command &quot;(keys {:a 1 :b 1})&quot;, :offset 18, :ns &quot;json-to-sql.core&quot;} {:command &quot;(let [keys (keys {:aa 1 :bbsa \&quot;asd\&quot;})\n      mapped-keys (into [] (map name keys))]\n  (s/join \&quot;, \&quot; mapped-keys))&quot;, :offset 37, :ns &quot;json-to-sql.core&quot;} {:command &quot;(let [keys (keys {:aa 1 :bbsa \&quot;asd\&quot;})\n      mapped-keys (into [] (map name keys))]\n  (clojure.string/join \&quot;, \&quot; mapped-keys))&quot;, :offset 100, :ns &quot;json-to-sql.core&quot;} {:command &quot;(str \&quot;''\&quot; \&quot;a\&quot;)&quot;, :offset 14, :ns &quot;json-to-sql.core&quot;} {:command &quot;(string? \&quot;Pera\&quot;)&quot;, :offset 16, :ns &quot;json-to-sql.core&quot;} {:command &quot;(str \&quot;'\&quot; \&quot;aa\&quot; \&quot;'\&quot;)&quot;, :offset 18, :ns &quot;json-to-sql.core&quot;} {:command &quot;(for [val (vals {\&quot;name\&quot; \&quot;a\&quot; \&quot;address\&quot; \&quot;b\&quot; \&quot;link\&quot; 2})]\n  (if (string? (type val))\n    (str \&quot;'\&quot; val \&quot;'\&quot;)\n    val))&quot;, :offset 112, :ns &quot;json-to-sql.core&quot;} {:command &quot;(s/join \&quot;, \&quot; (for [val (vals {\&quot;name\&quot; \&quot;a\&quot; \&quot;address\&quot; \&quot;b\&quot; \&quot;link\&quot; 2})]\n               (if (string? (type val))\n                 (str \&quot;'\&quot; val \&quot;'\&quot;)\n                 val)))&quot;, :offset 165, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (for [val (vals {\&quot;name\&quot; \&quot;a\&quot; \&quot;address\&quot; \&quot;b\&quot; \&quot;link\&quot; 2})]\n               (if (string? (type val))\n                 (str \&quot;'\&quot; val \&quot;'\&quot;)\n                 val)))&quot;, :offset 178, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (for [val (vals {\&quot;name\&quot; \&quot;a\&quot; \&quot;address\&quot; \&quot;b\&quot; \&quot;link\&quot; 2})]\n               (if (string? (type val))\n                 (str \&quot;\\'\&quot; val \&quot;\\'\&quot;)\n                 val)))&quot;, :offset 180, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (for [val (vals {\&quot;name\&quot; \&quot;a\&quot; \&quot;address\&quot; \&quot;b\&quot; \&quot;link\&quot; 2})]\n               (if (string? (type val))\n                 (str \&quot;''\&quot; val \&quot;''\&quot;)\n                 val)))&quot;, :offset 180, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (for [val (vals {\&quot;name\&quot; \&quot;a\&quot; \&quot;address\&quot; \&quot;b\&quot; \&quot;link\&quot; 2})]\n               (if (string? (type val))\n                 (str \&quot;'\\\&quot; val \&quot;'\\\&quot;)\n                 val)))&quot;, :offset 180, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (for [val (vals {\&quot;name\&quot; \&quot;a\&quot; \&quot;address\&quot; \&quot;b\&quot; \&quot;link\&quot; 2})]\n               (if (string? (type val))\n                 (str \&quot;\&quot; val \&quot;'\&quot;)\n                 val)))&quot;, :offset 177, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (for [val (vals {\&quot;name\&quot; \&quot;a\&quot; \&quot;address\&quot; \&quot;b\&quot; \&quot;link\&quot; 2})]\n               (if (string? (type val))\n                 (clojure.string/join \&quot;''\&quot; val)\n                 val)))&quot;, :offset 191, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (for [val (vals {\&quot;name\&quot; \&quot;a\&quot; \&quot;address\&quot; \&quot;b\&quot; \&quot;link\&quot; 2})]\n               (if (string? (type val))\n                 (str \&quot;\\''\&quot; val \&quot;\\''\&quot;)\n                 val)))&quot;, :offset 182, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (for [val (vals {\&quot;name\&quot; \&quot;a\&quot; \&quot;address\&quot; \&quot;b\&quot; \&quot;link\&quot; 2})]\n               (if (string? (type val))\n                 (str \&quot;\\'\\\&quot; val \&quot;\\'\\\&quot;)\n                 val)))&quot;, :offset 182, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (for [val (vals {\&quot;name\&quot; \&quot;a\&quot; \&quot;address\&quot; \&quot;b\&quot; \&quot;link\&quot; 2})]\n               (if (string? (type val))\n                 (str \&quot;`\&quot; val \&quot;`\&quot;)\n                 val)))&quot;, :offset 178, :ns &quot;json-to-sql.core&quot;} {:command &quot;(str \&quot;'a'\&quot; \&quot;b\&quot;)&quot;, :offset 15, :ns &quot;json-to-sql.core&quot;} {:command &quot;(keyword? :a)&quot;, :offset 13, :ns &quot;json-to-sql.core&quot;} {:command &quot;(str \&quot;'aa'\&quot; \&quot;b\&quot;)&quot;, :offset 16, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (for [val (vals {\&quot;name\&quot; \&quot;a\&quot; \&quot;address\&quot; \&quot;b\&quot; \&quot;link\&quot; 2})]\n               (if (string? (type val))\n                 (str \&quot;\\\&quot;\&quot; val \&quot;\\\&quot;\&quot;)\n                 val)))&quot;, :offset 180, :ns &quot;json-to-sql.core&quot;} {:command &quot;(for [val (vals {\&quot;name\&quot; \&quot;a\&quot; \&quot;address\&quot; \&quot;b\&quot; \&quot;link\&quot; 2})]\n  (if (string? (type val))\n    ((println str \&quot;\\\&quot;\&quot; val \&quot;\\\&quot;\&quot;)\n      (str \&quot;\\\&quot;\&quot; val \&quot;\\\&quot;\&quot;))\n    val))&quot;, :offset 150, :ns &quot;json-to-sql.core&quot;} {:command &quot;(name :key)&quot;, :offset 11, :ns &quot;json-to-sql.core&quot;} {:command &quot;(for [key (keys {:aaa \&quot;asdsa\&quot; :bbb \&quot;asddsa\&quot;})]\n  (name key))&quot;, :offset 60, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (seq (for [key (keys map)]\n                                 (name key))))&quot;, :offset 99, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (into [] (for [key (keys map)]\n                                 (name key))))&quot;, :offset 103, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (map seq (for [key (keys map)]\n                                 (name key))))&quot;, :offset 103, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (for [key (keys map)]\n                            (name key)))&quot;, :offset 88, :ns &quot;json-to-sql.core&quot;} {:command &quot;(map inc {:a 1 :b 2})&quot;, :offset 21, :ns &quot;json-to-sql.core&quot;} {:command &quot;(map inc (seq {:a 1 :b 2}))&quot;, :offset 27, :ns &quot;json-to-sql.core&quot;} {:command &quot;(map inc (into [] {:a 1 :b 2}))&quot;, :offset 17, :ns &quot;user&quot;} {:command &quot;(map #(+ % 1) (into [] {:a 1 :b 2}))&quot;, :offset 36, :ns &quot;user&quot;} {:command &quot;(ns json-to-sql.core)&quot;, :offset 21, :ns &quot;user&quot;} {:command &quot;(map inc [1 2 3])&quot;, :offset 17, :ns &quot;json-to-sql.core&quot;} {:command &quot;(ns json-to-sql.util\n  (:require [clojure.string :as s]))&quot;, :offset 57, :ns &quot;json-to-sql.core&quot;} {:command &quot;(if (string? \&quot;a\&quot;)\n  (value-&gt;string value)\n  value)&quot;, :offset 50, :ns &quot;json-to-sql.util&quot;} {:command &quot;(if (string? \&quot;a\&quot;)\n  (value-&gt;string \&quot;a\&quot;)\n  \&quot;a\&quot;)&quot;, :offset 46, :ns &quot;json-to-sql.util&quot;} {:command &quot;(ns json-to-sql.insert\n  (:require [json-to-sql.util :as util]\n            [clojure.string :as s]))&quot;, :offset 99, :ns &quot;json-to-sql.util&quot;} {:command &quot;(doc map)&quot;, :offset 9, :ns &quot;json-to-sql.insert&quot;} {:command &quot;(map #(+ % 1) [1 2 3])&quot;, :offset 22, :ns &quot;json-to-sql.insert&quot;} {:command &quot;(map #(str \&quot;'\&quot; % \&quot;'\&quot;) [\&quot;a\&quot; \&quot;b\&quot; \&quot;c\&quot;])&quot;, :offset 36, :ns &quot;json-to-sql.insert&quot;} {:command &quot;(into [] (vals {:name \&quot;Pera\&quot; :address \&quot;Fake Street 213\&quot; :link 2}) )&quot;, :offset 67, :ns &quot;json-to-sql.insert&quot;} {:command &quot;(get-column-names {:name \&quot;Pera\&quot; :address \&quot;Fake Street 213\&quot; :link 2})&quot;, :offset 68, :ns &quot;json-to-sql.insert&quot;} {:command &quot;(get-column-values {:name \&quot;Pera\&quot; :address \&quot;Fake Street 213\&quot; :link 2})&quot;, :offset 69, :ns &quot;json-to-sql.insert&quot;} {:command &quot;(ns json-to-sql.core\n  (:require [json-to-sql.insert :as insert]\n            [cheshire.core]))&quot;, :offset 94, :ns &quot;json-to-sql.insert&quot;} {:command &quot;(type \&quot;a\&quot;)&quot;, :offset 10, :ns &quot;json-to-sql.core&quot;} {:command &quot;(type true)&quot;, :offset 11, :ns &quot;json-to-sql.core&quot;} {:command &quot;(type 1)&quot;, :offset 8, :ns &quot;json-to-sql.core&quot;} {:command &quot;(boolean a)&quot;, :offset 11, :ns &quot;json-to-sql.core&quot;} {:command &quot;(boolean true)&quot;, :offset 14, :ns &quot;json-to-sql.core&quot;} {:command &quot;(require 'clojure.core)&quot;, :offset 10, :ns &quot;json-to-sql.core&quot;} {:command &quot;(boolean? true)&quot;, :offset 15, :ns &quot;json-to-sql.core&quot;} {:command &quot;(instance? Boolean true)&quot;, :offset 24, :ns &quot;json-to-sql.core&quot;} {:command &quot;(instance? Boolean \&quot;aa\&quot;)&quot;, :offset 24, :ns &quot;json-to-sql.core&quot;} {:command &quot;(json-&gt;insert)&quot;, :offset 14, :ns &quot;json-to-sql.core&quot;}], :remote []}}</component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -295,8 +341,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1721" height="935" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12040939" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12161349" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -310,7 +357,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32917705" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -319,7 +366,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info active="true" anchor="right" id="REPL" order="6" side_tool="true" visible="true" weight="0.39795303" />
+      <window_info active="true" anchor="right" id="REPL" order="6" side_tool="true" visible="true" weight="0.3732691" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.32992172" />
     </layout>
@@ -342,52 +389,66 @@
     <entry file="file://$PROJECT_DIR$/test/json_to_sql/core_test.clj">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/json_to_sql/converter.clj">
+    <entry file="file://$PROJECT_DIR$/src/json_to_sql/converter.clj" />
+    <entry file="file://$PROJECT_DIR$/src/json_to_sql/template.clj" />
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        <state relative-caret-position="-7488" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/insert.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="8" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/project.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="26" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="26" />
+        <state relative-caret-position="119">
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/json_to_sql/template.clj">
+    <entry file="file://$PROJECT_DIR$/resources/update.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="85">
+          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/json_to_sql/update.clj">
+    <entry file="file://$PROJECT_DIR$/src/json_to_sql/sql_util.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="527">
+          <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/json_to_sql/json_util.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/json_to_sql/insert.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+        <state relative-caret-position="224">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/json_to_sql/util.clj">
+    <entry file="file://$PROJECT_DIR$/src/json_to_sql/update.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+        <state>
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/json_to_sql/core.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+        <state relative-caret-position="391">
+          <caret line="23" column="55" lean-forward="true" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
         </state>
       </provider>
     </entry>
