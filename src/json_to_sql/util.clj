@@ -11,7 +11,11 @@
   [value]
   (if (string? value)
     (str "'" value "'")
-    value))
+    (if (instance? Boolean value)
+      (if value
+        1
+        0)
+      value)))
 
 (defn map->seq-columns
   "Converts map keywords to column names"

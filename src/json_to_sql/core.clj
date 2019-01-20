@@ -11,7 +11,11 @@
 (defn json->insert
   []
   "Converts json to SQL INSERT statement"
-  (insert/statement "Users" {:name "Pera" :address "Fake Street 213" :link 2}))
+  (insert/statement "Users"
+                    {:name "Pera",
+                     :address "Fake Street 213",
+                     :link 2,
+                     :admin false}))
 
 (defn json->update
   [json]
