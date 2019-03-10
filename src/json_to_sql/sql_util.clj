@@ -48,12 +48,12 @@
     (for [val (vals map)]
       (map-value->sql-value val))))
 
-(defn map->conditions
+(defn seq-of-map->conditions
   "Converts map to conditions"
   [seq-of-maps]
   (for [condition-map seq-of-maps]
     (let [column (:column condition-map)
           operation ((:operation condition-map) operations)
           value (map-value->sql-value (:value condition-map))]
-      (s/join " AND " (str column " " operations " " value)))))
+      (s/join " AND " (str column " " operation " " value)))))
 

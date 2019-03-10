@@ -1,15 +1,10 @@
 (ns json-to-sql.core
   (:require [json-to-sql.insert :as insert]
             [json-to-sql.update :as update]
-            [json-to-sql.json-util :as json-util]
-            [json-to-sql.json-util :as sql-util]))
+            [json-to-sql.json-util :as json-util]))
 
 (def insert-json-file "resources\\insert.json")
 (def update-json-file "resources\\update.json")
-
-(defn read-json
-  [filename]
-  (cheshire/parse-string (slurp filename) true))
 
 (defn json->select
   [json]
@@ -31,7 +26,7 @@
   (let [map (json-util/json->map json)
         table-name-keyword (json-util/get-table-name-keyword map)
         data (table-name-keyword map)]
-    (update/statement (name table-name-keyword) (sql-util/map->conditions (json-util/get-conditions-keyword map)) data)))
+    (update/statement (name table-name-keyword) (:conditions map) data)))
 
 (defn json->delete
   [json]

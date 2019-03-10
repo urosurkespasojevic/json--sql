@@ -16,6 +16,6 @@
     (sql-util/map->sql
       (sql-util/map->sql
         (sql-util/map->sql template (sql-util/placeholders :column_values) values)
-        (sql-util/placeholders :conditions) conditions)
+        (sql-util/placeholders :conditions) (sql-util/seq-of-map->conditions conditions))
       (sql-util/placeholders :table_name) table-name)))
 
