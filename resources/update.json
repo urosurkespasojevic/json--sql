@@ -6,10 +6,16 @@
     "is_admin": true,
     "card_no": 123
   },
-  "conditions": {
-    "id": {
+  "conditions": [
+    {
+      "column" : "name",
+      "operation": "like",
+      "value": "Fake"
+    },
+    {
+      "column" : "card_no",
       "operation": "eq",
-      "value": 1
+      "value": 123
     }
-  }
+  ]
 }

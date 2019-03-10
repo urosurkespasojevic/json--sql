@@ -1,6 +1,23 @@
 (ns json-to-sql.sql-util
   (:require [clojure.string :as s]))
 
+(def operations
+  {
+   "eq" "="
+   "not_eq" "<>"
+   "like" "like"
+   "gt" ">"
+   "gt_eq" ">="
+   "lt" "<"
+   "lt_eq" "<="
+   })
+
+(def placeholders
+  {:table_name "{table_name}"
+   :column_names "{column_names}"
+   :column_values "{column_values}"
+   :conditions "{conditions}"})
+
 (defn map->sql
   "Formats string replacing placeholder with value value"
   [text placeholder value]
@@ -25,8 +42,18 @@
       (name key))))
 
 (defn map->seq-values
-  "Converts map values to vector of values"
+  "Converts map values to values"
   [raw-map]
   (let [map (into {} raw-map)]
     (for [val (vals map)]
       (map-value->sql-value val))))
+
+(defn map->conditions
+  "Converts map to conditions"
+  [seq-of-maps]
+  (for [condition-map seq-of-maps]
+    (let [column (:column condition-map)
+          operation ((:operation condition-map) operations)
+          value (map-value->sql-value (:value condition-map))]
+      (s/join " AND " (str column " " operations " " value)))))
+

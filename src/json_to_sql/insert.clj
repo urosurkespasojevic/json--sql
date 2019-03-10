@@ -4,11 +4,6 @@
 
 (def template "INSERT INTO {table_name} ({column_names}) VALUES ({column_values})")
 
-(def placeholders
-  {:table_name "{table_name}"
-   :column_names "{column_names}"
-   :column_values "{column_values}"})
-
 (defn get-column-names
   "Gets string of column names joined with ,"
   [map]
@@ -29,6 +24,6 @@
         values (get-column-values map)]
     (sql-util/map->sql
       (sql-util/map->sql
-        (sql-util/map->sql template (placeholders :column_values) values)
-        (placeholders :column_names) names)
-      (placeholders :table_name) table-name)))
+        (sql-util/map->sql template (sql-util/placeholders :column_values) values)
+        (sql-util/placeholders :column_names) names)
+      (sql-util/placeholders :table_name) table-name)))

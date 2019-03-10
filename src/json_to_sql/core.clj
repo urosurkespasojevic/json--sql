@@ -1,7 +1,8 @@
 (ns json-to-sql.core
   (:require [json-to-sql.insert :as insert]
             [json-to-sql.update :as update]
-            [json-to-sql.json-util :as json-util]))
+            [json-to-sql.json-util :as json-util]
+            [json-to-sql.json-util :as sql-util]))
 
 (def insert-json-file "resources\\insert.json")
 (def update-json-file "resources\\update.json")
@@ -27,8 +28,10 @@
 
 (defn json->update
   [json]
-  "Converts json to SQL UPDATE statement"
-  (println "json->update"))
+  (let [map (json-util/json->map json)
+        table-name-keyword (json-util/get-table-name-keyword map)
+        data (table-name-keyword map)]
+    (update/statement (name table-name-keyword) (sql-util/map->conditions (json-util/get-conditions-keyword map)) data)))
 
 (defn json->delete
   [json]
