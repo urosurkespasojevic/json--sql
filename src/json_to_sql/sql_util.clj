@@ -21,6 +21,9 @@
 (defn map->sql
   "Formats string replacing placeholder with value value"
   [text placeholder value]
+  ;(println text)
+  ;(println placeholder)
+  ;(println value)
   (s/replace text placeholder value))
 
 (defn map-value->sql-value

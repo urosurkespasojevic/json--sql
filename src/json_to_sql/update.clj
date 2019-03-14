@@ -7,15 +7,17 @@
 (defn get-column-values
   "Gets string of column names and values joined with , ('a = 1, b = 2 , ...')"
   [map]
-  (doseq [[column value] (seq map)] (s/join ", " (str (name column) " = " value))))
+  (for [seq-map (seq map)]
+    seq-map))
 
 (defn statement
   "Gets UPDATE SQL statement for table name with conditions"
   [table-name conditions map]
-  (let [values (get-column-values map)]
+  (let [values (s/join ", " (into [] (s/join " = " (get-column-values map))))]
     (sql-util/map->sql
       (sql-util/map->sql
         (sql-util/map->sql template (sql-util/placeholders :column_values) values)
         (sql-util/placeholders :conditions) (sql-util/seq-of-map->conditions conditions))
       (sql-util/placeholders :table_name) table-name)))
+
 

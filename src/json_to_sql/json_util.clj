@@ -11,9 +11,3 @@
   [map]
   (first
     (filter #(not= % :conditions) (keys map))))
-
-(defn get-conditions-keyword
-  "Gets conditions map from provided map"
-  [map]
-  (first
-    (filter #(= % :conditions) (keys map))))
