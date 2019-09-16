@@ -1,0 +1,21 @@
+{
+  "Users": {
+    "name": "",
+    "address": "",
+    "date_of_birth": "",
+    "is_admin": "",
+    "card_no": ""
+  },
+  "conditions": [
+    {
+      "column" : "name",
+      "operation": "like",
+      "value": "Fake"
+    },
+    {
+      "column" : "card_no",
+      "operation": "eq",
+      "value": 123
+    }
+  ]
+}
