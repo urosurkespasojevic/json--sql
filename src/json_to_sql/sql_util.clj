@@ -2,15 +2,13 @@
   (:require [clojure.string :as s]))
 
 (def operations
-  {
-   "eq" "="
-   "not_eq" "<>"
-   "like" "like"
-   "gt" ">"
-   "gt_eq" ">="
-   "lt" "<"
-   "lt_eq" "<="
-   })
+  {"eq" "=",
+   "not_eq" "<>",
+   "like" "LIKE",
+   "gt" ">",
+   "gt_eq" ">=",
+   "lt" "<",
+   "lt_eq" "<="})
 
 (def placeholders
   {:table_name "{table_name}"
@@ -54,9 +52,6 @@
 (defn seq-of-map->conditions
   "Converts map to conditions"
   [seq-of-maps]
-  (for [condition-map seq-of-maps]
-    (let [column (:column condition-map)
-          operation ((:operation condition-map) operations)
-          value (map-value->sql-value (:value condition-map))]
-      (s/join " AND " (str column " " operation " " value)))))
+  (seq (for [condition-map seq-of-maps]
+         (str (:column condition-map) " " (get operations (:operation condition-map)) " " (map-value->sql-value (:value condition-map))))))
 
