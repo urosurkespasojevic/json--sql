@@ -4,13 +4,6 @@
 
 (def template "INSERT INTO {table_name} ({column_names}) VALUES ({column_values})")
 
-(defn get-column-names
-  "Gets string of column names joined with ,"
-  [map]
-  (let [seq-columns (into [] (sql-util/map->seq-columns map))]
-    (s/join ", " seq-columns)))
-
-
 (defn get-column-values
   "Gets string of column values joined with ,"
   [map]
@@ -20,7 +13,7 @@
 (defn statement
   "Gets INSERT SQL statement for table name"
   [table-name map]
-  (let [names (get-column-names map)
+  (let [names (sql-util/get-column-names map)
         values (get-column-values map)]
     (sql-util/map->sql
       (sql-util/map->sql

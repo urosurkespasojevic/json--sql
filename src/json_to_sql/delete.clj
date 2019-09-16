@@ -4,7 +4,6 @@
 
 (def template "DELETE FROM {table_name} WHERE {conditions}")
 
-
 (defn statement
   "Gets DELETE SQL statement for table name with conditions"
   [table-name conditions]

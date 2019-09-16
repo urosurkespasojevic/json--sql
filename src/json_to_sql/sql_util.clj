@@ -19,9 +19,6 @@
 (defn map->sql
   "Formats string replacing placeholder with value value"
   [text placeholder value]
-  ;(println text)
-  ;(println placeholder)
-  ;(println value)
   (s/replace text placeholder value))
 
 (defn map-value->sql-value
@@ -54,4 +51,10 @@
   [seq-of-maps]
   (seq (for [condition-map seq-of-maps]
          (str (:column condition-map) " " (get operations (:operation condition-map)) " " (map-value->sql-value (:value condition-map))))))
+
+(defn get-column-names
+  "Gets string of column names joined with ,"
+  [map]
+  (let [seq-columns (into [] (map->seq-columns map))]
+    (s/join ", " seq-columns)))
 
