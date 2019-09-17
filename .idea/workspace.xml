@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59e8d504-b30e-4206-b9e9-d4ea7d1a29bd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/delete.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/delete.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/json_to_sql/delete.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/json_to_sql/delete.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/json_to_sql/select.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/json_to_sql/select.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/json_to_sql/update.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/json_to_sql/update.clj" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,37 +18,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/json_to_sql/core.clj">
+        <entry file="file://$PROJECT_DIR$/src/json_to_sql/select.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="7" column="21" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/select.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="20" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/insert.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="8" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/update.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="20" selection-end-column="1" />
+            <state relative-caret-position="272">
+              <caret line="16" column="107" selection-start-line="14" selection-start-column="27" selection-end-line="16" selection-end-column="107" />
             </state>
           </provider>
         </entry>
@@ -55,8 +29,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/delete.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+            <state relative-caret-position="221">
+              <caret line="13" column="3" lean-forward="true" selection-start-line="1" selection-start-column="13" selection-end-line="13" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/json_to_sql/delete.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="52" lean-forward="true" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -93,17 +76,17 @@
         <option value="$PROJECT_DIR$/src/json_to_sql/template.clj" />
         <option value="$PROJECT_DIR$/src/json_to_sql/util.clj" />
         <option value="$PROJECT_DIR$/resources/insert.json" />
-        <option value="$PROJECT_DIR$/resources/update.json" />
         <option value="$PROJECT_DIR$/src/json_to_sql/operation_util.clj" />
         <option value="$PROJECT_DIR$/src/json_to_sql/json_util.clj" />
         <option value="$PROJECT_DIR$/project.clj" />
-        <option value="$PROJECT_DIR$/src/json_to_sql/update.clj" />
-        <option value="$PROJECT_DIR$/resources/select.json" />
-        <option value="$PROJECT_DIR$/src/json_to_sql/select.clj" />
         <option value="$PROJECT_DIR$/src/json_to_sql/insert.clj" />
-        <option value="$PROJECT_DIR$/src/json_to_sql/delete.clj" />
         <option value="$PROJECT_DIR$/src/json_to_sql/core.clj" />
         <option value="$PROJECT_DIR$/src/json_to_sql/sql_util.clj" />
+        <option value="$PROJECT_DIR$/resources/select.json" />
+        <option value="$PROJECT_DIR$/src/json_to_sql/select.clj" />
+        <option value="$PROJECT_DIR$/src/json_to_sql/update.clj" />
+        <option value="$PROJECT_DIR$/resources/update.json" />
+        <option value="$PROJECT_DIR$/src/json_to_sql/delete.clj" />
         <option value="$PROJECT_DIR$/resources/delete.json" />
       </list>
     </option>
@@ -189,7 +172,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
-  <component name="ReplState" timestamp="1568733950150">{:repl-history {:ide [], :local [{:command &quot;(clojure.string/join \&quot;, \&quot; (for [val (vals {\&quot;name\&quot; \&quot;a\&quot; \&quot;address\&quot; \&quot;b\&quot; \&quot;link\&quot; 2})]\n               (if (string? (type val))\n                 (str \&quot;`\&quot; val \&quot;`\&quot;)\n                 val)))&quot;, :offset 178, :ns &quot;json-to-sql.core&quot;} {:command &quot;(str \&quot;'a'\&quot; \&quot;b\&quot;)&quot;, :offset 15, :ns &quot;json-to-sql.core&quot;} {:command &quot;(keyword? :a)&quot;, :offset 13, :ns &quot;json-to-sql.core&quot;} {:command &quot;(str \&quot;'aa'\&quot; \&quot;b\&quot;)&quot;, :offset 16, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (for [val (vals {\&quot;name\&quot; \&quot;a\&quot; \&quot;address\&quot; \&quot;b\&quot; \&quot;link\&quot; 2})]\n               (if (string? (type val))\n                 (str \&quot;\\\&quot;\&quot; val \&quot;\\\&quot;\&quot;)\n                 val)))&quot;, :offset 180, :ns &quot;json-to-sql.core&quot;} {:command &quot;(for [val (vals {\&quot;name\&quot; \&quot;a\&quot; \&quot;address\&quot; \&quot;b\&quot; \&quot;link\&quot; 2})]\n  (if (string? (type val))\n    ((println str \&quot;\\\&quot;\&quot; val \&quot;\\\&quot;\&quot;)\n      (str \&quot;\\\&quot;\&quot; val \&quot;\\\&quot;\&quot;))\n    val))&quot;, :offset 150, :ns &quot;json-to-sql.core&quot;} {:command &quot;(name :key)&quot;, :offset 11, :ns &quot;json-to-sql.core&quot;} {:command &quot;(for [key (keys {:aaa \&quot;asdsa\&quot; :bbb \&quot;asddsa\&quot;})]\n  (name key))&quot;, :offset 60, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (seq (for [key (keys map)]\n                                 (name key))))&quot;, :offset 99, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (into [] (for [key (keys map)]\n                                 (name key))))&quot;, :offset 103, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (map seq (for [key (keys map)]\n                                 (name key))))&quot;, :offset 103, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (for [key (keys map)]\n                            (name key)))&quot;, :offset 88, :ns &quot;json-to-sql.core&quot;} {:command &quot;(map inc {:a 1 :b 2})&quot;, :offset 21, :ns &quot;json-to-sql.core&quot;} {:command &quot;(map inc (seq {:a 1 :b 2}))&quot;, :offset 27, :ns &quot;json-to-sql.core&quot;} {:command &quot;(map inc (into [] {:a 1 :b 2}))&quot;, :offset 17, :ns &quot;user&quot;} {:command &quot;(map #(+ % 1) (into [] {:a 1 :b 2}))&quot;, :offset 36, :ns &quot;user&quot;} {:command &quot;(map inc [1 2 3])&quot;, :offset 17, :ns &quot;json-to-sql.core&quot;} {:command &quot;(ns json-to-sql.util\n  (:require [clojure.string :as s]))&quot;, :offset 57, :ns &quot;json-to-sql.core&quot;} {:command &quot;(if (string? \&quot;a\&quot;)\n  (value-&gt;string value)\n  value)&quot;, :offset 50, :ns &quot;json-to-sql.util&quot;} {:command &quot;(if (string? \&quot;a\&quot;)\n  (value-&gt;string \&quot;a\&quot;)\n  \&quot;a\&quot;)&quot;, :offset 46, :ns &quot;json-to-sql.util&quot;} {:command &quot;(doc map)&quot;, :offset 9, :ns &quot;json-to-sql.insert&quot;} {:command &quot;(map #(+ % 1) [1 2 3])&quot;, :offset 22, :ns &quot;json-to-sql.insert&quot;} {:command &quot;(map #(str \&quot;'\&quot; % \&quot;'\&quot;) [\&quot;a\&quot; \&quot;b\&quot; \&quot;c\&quot;])&quot;, :offset 36, :ns &quot;json-to-sql.insert&quot;} {:command &quot;(into [] (vals {:name \&quot;Pera\&quot; :address \&quot;Fake Street 213\&quot; :link 2}) )&quot;, :offset 67, :ns &quot;json-to-sql.insert&quot;} {:command &quot;(get-column-names {:name \&quot;Pera\&quot; :address \&quot;Fake Street 213\&quot; :link 2})&quot;, :offset 68, :ns &quot;json-to-sql.insert&quot;} {:command &quot;(get-column-values {:name \&quot;Pera\&quot; :address \&quot;Fake Street 213\&quot; :link 2})&quot;, :offset 69, :ns &quot;json-to-sql.insert&quot;} {:command &quot;(ns json-to-sql.core\n  (:require [json-to-sql.insert :as insert]\n            [cheshire.core]))&quot;, :offset 94, :ns &quot;json-to-sql.insert&quot;} {:command &quot;(type \&quot;a\&quot;)&quot;, :offset 10, :ns &quot;json-to-sql.core&quot;} {:command &quot;(type true)&quot;, :offset 11, :ns &quot;json-to-sql.core&quot;} {:command &quot;(type 1)&quot;, :offset 8, :ns &quot;json-to-sql.core&quot;} {:command &quot;(boolean a)&quot;, :offset 11, :ns &quot;json-to-sql.core&quot;} {:command &quot;(boolean true)&quot;, :offset 14, :ns &quot;json-to-sql.core&quot;} {:command &quot;(require 'clojure.core)&quot;, :offset 10, :ns &quot;json-to-sql.core&quot;} {:command &quot;(boolean? true)&quot;, :offset 15, :ns &quot;json-to-sql.core&quot;} {:command &quot;(instance? Boolean true)&quot;, :offset 24, :ns &quot;json-to-sql.core&quot;} {:command &quot;(instance? Boolean \&quot;aa\&quot;)&quot;, :offset 24, :ns &quot;json-to-sql.core&quot;} {:command &quot;(json-&gt;insert)&quot;, :offset 14, :ns &quot;json-to-sql.core&quot;} {:command &quot;(ns json-to-sql.insert\n  (:require [json-to-sql.util :as util]\n            [clojure.string :as s]))&quot;, :offset 99, :ns &quot;user&quot;} {:command &quot;(slurp test-json-file)&quot;, :offset 22, :ns &quot;json-to-sql.insert&quot;} {:command &quot;(ns json-to-sql.core\n  (:require [json-to-sql.insert :as insert]\n            [json-to-sql.update :as update]\n            [cheshire.core :as cheshire]))&quot;, :offset 151, :ns &quot;json-to-sql.insert&quot;} {:command &quot;(read_json)&quot;, :offset 11, :ns &quot;json-to-sql.core&quot;} {:command &quot;(ns)&quot;, :offset 4, :ns &quot;json-to-sql.core&quot;} {:command &quot;test-json-file&quot;, :offset 14, :ns &quot;json-to-sql.core&quot;} {:command &quot;(cheshire/parse-string (slurp test-json-file) true)&quot;, :offset 51, :ns &quot;json-to-sql.core&quot;} {:command &quot;(read_json test-json-file)&quot;, :offset 26, :ns &quot;json-to-sql.core&quot;} {:command &quot;(read-json test-json-file)&quot;, :offset 6, :ns &quot;json-to-sql.core&quot;} {:command &quot;(read-json update-json-file)&quot;, :offset 27, :ns &quot;json-to-sql.core&quot;} {:command &quot;(first [:a :b :c])&quot;, :offset 18, :ns &quot;json-to-sql.core&quot;} {:command &quot;(= :ket :ket)&quot;, :offset 13, :ns &quot;json-to-sql.core&quot;} {:command &quot;(= :ket :key)&quot;, :offset 13, :ns &quot;json-to-sql.core&quot;} {:command &quot;(first (filter #(not= % :conditions) (keys {:Users {:name \&quot;Joe Doe\&quot;, :address \&quot;Fake street 123\&quot;, :date_of_birth \&quot;01.01.1900\&quot;, :is_admin true, :card_no 123},\n                                            :condition {:id {:operation \&quot;eq\&quot;, :value 1}}})))&quot;, :offset 246, :ns &quot;json-to-sql.core&quot;} {:command &quot;(name (first (filter #(not= % :conditions) (keys {:Users {:name \&quot;Joe Doe\&quot;, :address \&quot;Fake street 123\&quot;, :date_of_birth \&quot;01.01.1900\&quot;, :is_admin true, :card_no 123},\n                                                  :condition {:id {:operation \&quot;eq\&quot;, :value 1}}}))))&quot;, :offset 258, :ns &quot;json-to-sql.core&quot;} {:command &quot;(name (first (filter #(or (not= % :conditions) (not= % :pera)) (keys {:pera \&quot;aaa\&quot; :Users {:name \&quot;Joe Doe\&quot;, :address \&quot;Fake street 123\&quot;, :date_of_birth \&quot;01.01.1900\&quot;, :is_admin true, :card_no 123},\n                                                  :condition {:id {:operation \&quot;eq\&quot;, :value 1}}}))))&quot;, :offset 60, :ns &quot;json-to-sql.core&quot;} {:command &quot;(name (first (filter #(and (not= % :conditions) (not= % :pera)) (keys {:pera \&quot;aaa\&quot; :Users {:name \&quot;Joe Doe\&quot;, :address \&quot;Fake street 123\&quot;, :date_of_birth \&quot;01.01.1900\&quot;, :is_admin true, :card_no 123},\n                                                  :condition {:id {:operation \&quot;eq\&quot;, :value 1}}}))))&quot;, :offset 210, :ns &quot;json-to-sql.core&quot;} {:command &quot;(doseq [[key val] (seq {:a 1 :b 2})] (println (str key \&quot;=\&quot; val)))&quot;, :offset 65, :ns &quot;user&quot;} {:command &quot;(doseq [[key val] (seq {:a 1 :b 2})] (println (str (name key) \&quot;=\&quot; val)))&quot;, :offset 72, :ns &quot;user&quot;} {:command &quot;(json-to-sql.update (read-json update-json-file))&quot;, :offset 49, :ns &quot;json-to-sql.core&quot;} {:command &quot;(json-to-sql.update (json-util/json-&gt;map update-json-file))&quot;, :offset 59, :ns &quot;json-to-sql.core&quot;} {:command &quot;(update (json-util/json-&gt;map update-json-file))&quot;, :offset 47, :ns &quot;json-to-sql.core&quot;} {:command &quot;(json-&gt;update (json-util/json-&gt;map update-json-file))&quot;, :offset 53, :ns &quot;json-to-sql.core&quot;} {:command &quot;(def )&quot;, :offset 5} {:command &quot;(def a (json-util/json-&gt;map update-json-file))&quot;, :offset 46, :ns &quot;json-to-sql.core&quot;} {:command &quot;(:conditions a)&quot;, :offset 15, :ns &quot;json-to-sql.core&quot;} {:command &quot;(json-util/json-&gt;map update-json-file)&quot;, :offset 38, :ns &quot;json-to-sql.core&quot;} {:command &quot;(doseq [[k v] {:a 1 :b 2}] (s/join \&quot;, \&quot; (str (name k) \&quot; = \&quot; v)))&quot;, :offset 64, :ns &quot;json-to-sql.core&quot;} {:command &quot;(doseq [[k v] {:a 1 :b 2}] (str (name k) \&quot; = \&quot; v))&quot;, :offset 50, :ns &quot;json-to-sql.core&quot;} {:command &quot;(doseq [[k v] {:a 1 :b 2}] (str k \&quot; = \&quot; v))&quot;, :offset 43, :ns &quot;json-to-sql.core&quot;} {:command &quot;(doseq [[k v] {:a 1 :b 2}] (println (str k \&quot; = \&quot; v)))&quot;, :offset 53, :ns &quot;json-to-sql.core&quot;} {:command &quot;(seq {:a 1 :b 2})&quot;, :offset 17, :ns &quot;json-to-sql.core&quot;} {:command &quot;(println ([k v] {:a 1}))&quot;, :offset 24, :ns &quot;json-to-sql.core&quot;} {:command &quot;(println (([k v] {:a 1}) k))&quot;, :offset 28, :ns &quot;json-to-sql.core&quot;} {:command &quot;(let [{:k v} {:a 1}]\n  (println (str :k \&quot; \&quot; v)))&quot;, :offset 48, :ns &quot;json-to-sql.core&quot;} {:command &quot;(let [[k v] {:a 1}]\n  (println (str k \&quot; \&quot; v)))&quot;, :offset 46, :ns &quot;json-to-sql.core&quot;} {:command &quot;(let [{[k v]} {:a 1}]\n  (println (str k \&quot; \&quot; v)))&quot;, :offset 43, :ns &quot;json-to-sql.core&quot;} {:command &quot;(let [{:k v} {:a 1}]\n  (println (str k \&quot; \&quot; v)))&quot;, :offset 47, :ns &quot;json-to-sql.core&quot;} {:command &quot;(let [{:k [a b]} {:a 1}]\n  (println (str a \&quot; \&quot; b)))&quot;, :offset 51, :ns &quot;json-to-sql.core&quot;} {:command &quot;(seq {:a 1 :b 2 :c 2})&quot;, :offset 22, :ns &quot;json-to-sql.core&quot;} {:command &quot;(seq [:a 1])&quot;, :offset 12, :ns &quot;json-to-sql.core&quot;} {:command &quot;([a b] [:a 2])&quot;, :offset 14, :ns &quot;json-to-sql.core&quot;} {:command &quot;(let [[a b] (seq {:a 1})] (str a \&quot; \&quot; b))&quot;, :offset 40, :ns &quot;json-to-sql.core&quot;} {:command &quot;(for [seq (seq {:name Joe Doe, :address Fake street 123, :date_of_birth 01.01.1900, :is_admin true, :card_no 123}\n               )]\n  (println seq))&quot;, :offset 148, :ns &quot;json-to-sql.core&quot;} {:command &quot;(for [seq (seq {:name \&quot;a\&quot;, :address \&quot;b\&quot;, :date_of_birth \&quot;c\&quot;, :is_admin true, :card_no 123})]\n  (println seq))&quot;, :offset 109, :ns &quot;json-to-sql.core&quot;} {:command &quot;(for [seq (seq {:name \&quot;a\&quot;, :address \&quot;b\&quot;, :date_of_birth \&quot;c\&quot;, :is_admin true, :card_no 123})]\n  (let [[k v] seq]\n    (println (str k \&quot; = \&quot; v))))&quot;, :offset 143, :ns &quot;json-to-sql.core&quot;} {:command &quot;(let [[k v] [:a 1]]\n  (str k \&quot;, \&quot; v))&quot;, :offset 37, :ns &quot;json-to-sql.core&quot;} {:command &quot;(for [seq [[:a 1] [:b 2]]]\n  (let [[k v] [:a 1]]\n    (str k \&quot;, \&quot; v)))&quot;, :offset 69, :ns &quot;json-to-sql.core&quot;} {:command &quot;(get-column-values {:a 1, :b 2, :c 3})&quot;, :offset 38, :ns &quot;json-to-sql.update&quot;} {:command &quot;(into [] (get-column-values {:a 1, :b 2, :c 3}))&quot;, :offset 48, :ns &quot;json-to-sql.update&quot;} {:command &quot;(s/join \&quot;, \&quot; (into [] (s/join \&quot; = \&quot; (into [] (get-column-values map)))))&quot;, :offset 72, :ns &quot;json-to-sql.update&quot;} {:command &quot;(s/join \&quot;, \&quot; (into [] (s/join \&quot; = \&quot; (get-column-values map))))&quot;, :offset 62, :ns &quot;json-to-sql.update&quot;} {:command &quot;(s/join \&quot;, \&quot; (into [] (s/join \&quot; = \&quot; (get-column-values {:a 1, :b 2}))))&quot;, :offset 71, :ns &quot;json-to-sql.update&quot;} {:command &quot;(s/join \&quot;, \&quot; (into [] (s/join \&quot; = \&quot; (into [] (get-column-values {:a 1 :b 2})))))&quot;, :offset 74, :ns &quot;json-to-sql.update&quot;} {:command &quot;(str \&quot;a\&quot; \&quot;b\&quot;)&quot;, :offset 13, :ns &quot;json-to-sql.core&quot;} {:command &quot;(json-&gt;insert insert-json-file)&quot;, :offset 31, :ns &quot;json-to-sql.core&quot;} {:command &quot;(json-&gt;update update -json-file)&quot;, :offset 32, :ns &quot;json-to-sql.core&quot;} {:command &quot;(ns json-&gt;update)&quot;, :offset 17, :ns &quot;json-to-sql.core&quot;} {:command &quot;(ns json-to-sql.update)&quot;, :offset 23, :ns &quot;json-&gt;update&quot;} {:command &quot;(get-column-values {:name Joe Doe, :address Fake street 123, :date_of_birth 01.01.1900, :is_admin true, :card_no 123})&quot;, :offset 118, :ns &quot;json-to-sql.update&quot;} {:command &quot;(get-column-values {:name \&quot;pera\&quot;, :admin \&quot;true\&quot;})&quot;, :offset 49, :ns &quot;json-to-sql.update&quot;} {:command &quot;(ns json-to-sql.core)&quot;, :offset 21, :ns &quot;json-to-sql.update&quot;} {:command &quot;(json-&gt;update update-json-file)&quot;, :offset 31, :ns &quot;json-to-sql.core&quot;}], :remote []}}</component>
+  <component name="ReplState" timestamp="1568735344646">{:repl-history {:ide [], :local [{:command &quot;(clojure.string/join \&quot;, \&quot; (for [val (vals {\&quot;name\&quot; \&quot;a\&quot; \&quot;address\&quot; \&quot;b\&quot; \&quot;link\&quot; 2})]\n               (if (string? (type val))\n                 (str \&quot;`\&quot; val \&quot;`\&quot;)\n                 val)))&quot;, :offset 178, :ns &quot;json-to-sql.core&quot;} {:command &quot;(str \&quot;'a'\&quot; \&quot;b\&quot;)&quot;, :offset 15, :ns &quot;json-to-sql.core&quot;} {:command &quot;(keyword? :a)&quot;, :offset 13, :ns &quot;json-to-sql.core&quot;} {:command &quot;(str \&quot;'aa'\&quot; \&quot;b\&quot;)&quot;, :offset 16, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (for [val (vals {\&quot;name\&quot; \&quot;a\&quot; \&quot;address\&quot; \&quot;b\&quot; \&quot;link\&quot; 2})]\n               (if (string? (type val))\n                 (str \&quot;\\\&quot;\&quot; val \&quot;\\\&quot;\&quot;)\n                 val)))&quot;, :offset 180, :ns &quot;json-to-sql.core&quot;} {:command &quot;(for [val (vals {\&quot;name\&quot; \&quot;a\&quot; \&quot;address\&quot; \&quot;b\&quot; \&quot;link\&quot; 2})]\n  (if (string? (type val))\n    ((println str \&quot;\\\&quot;\&quot; val \&quot;\\\&quot;\&quot;)\n      (str \&quot;\\\&quot;\&quot; val \&quot;\\\&quot;\&quot;))\n    val))&quot;, :offset 150, :ns &quot;json-to-sql.core&quot;} {:command &quot;(name :key)&quot;, :offset 11, :ns &quot;json-to-sql.core&quot;} {:command &quot;(for [key (keys {:aaa \&quot;asdsa\&quot; :bbb \&quot;asddsa\&quot;})]\n  (name key))&quot;, :offset 60, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (seq (for [key (keys map)]\n                                 (name key))))&quot;, :offset 99, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (into [] (for [key (keys map)]\n                                 (name key))))&quot;, :offset 103, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (map seq (for [key (keys map)]\n                                 (name key))))&quot;, :offset 103, :ns &quot;json-to-sql.core&quot;} {:command &quot;(clojure.string/join \&quot;, \&quot; (for [key (keys map)]\n                            (name key)))&quot;, :offset 88, :ns &quot;json-to-sql.core&quot;} {:command &quot;(map inc {:a 1 :b 2})&quot;, :offset 21, :ns &quot;json-to-sql.core&quot;} {:command &quot;(map inc (seq {:a 1 :b 2}))&quot;, :offset 27, :ns &quot;json-to-sql.core&quot;} {:command &quot;(map inc (into [] {:a 1 :b 2}))&quot;, :offset 17, :ns &quot;user&quot;} {:command &quot;(map #(+ % 1) (into [] {:a 1 :b 2}))&quot;, :offset 36, :ns &quot;user&quot;} {:command &quot;(map inc [1 2 3])&quot;, :offset 17, :ns &quot;json-to-sql.core&quot;} {:command &quot;(ns json-to-sql.util\n  (:require [clojure.string :as s]))&quot;, :offset 57, :ns &quot;json-to-sql.core&quot;} {:command &quot;(if (string? \&quot;a\&quot;)\n  (value-&gt;string value)\n  value)&quot;, :offset 50, :ns &quot;json-to-sql.util&quot;} {:command &quot;(if (string? \&quot;a\&quot;)\n  (value-&gt;string \&quot;a\&quot;)\n  \&quot;a\&quot;)&quot;, :offset 46, :ns &quot;json-to-sql.util&quot;} {:command &quot;(doc map)&quot;, :offset 9, :ns &quot;json-to-sql.insert&quot;} {:command &quot;(map #(+ % 1) [1 2 3])&quot;, :offset 22, :ns &quot;json-to-sql.insert&quot;} {:command &quot;(map #(str \&quot;'\&quot; % \&quot;'\&quot;) [\&quot;a\&quot; \&quot;b\&quot; \&quot;c\&quot;])&quot;, :offset 36, :ns &quot;json-to-sql.insert&quot;} {:command &quot;(into [] (vals {:name \&quot;Pera\&quot; :address \&quot;Fake Street 213\&quot; :link 2}) )&quot;, :offset 67, :ns &quot;json-to-sql.insert&quot;} {:command &quot;(get-column-names {:name \&quot;Pera\&quot; :address \&quot;Fake Street 213\&quot; :link 2})&quot;, :offset 68, :ns &quot;json-to-sql.insert&quot;} {:command &quot;(get-column-values {:name \&quot;Pera\&quot; :address \&quot;Fake Street 213\&quot; :link 2})&quot;, :offset 69, :ns &quot;json-to-sql.insert&quot;} {:command &quot;(ns json-to-sql.core\n  (:require [json-to-sql.insert :as insert]\n            [cheshire.core]))&quot;, :offset 94, :ns &quot;json-to-sql.insert&quot;} {:command &quot;(type \&quot;a\&quot;)&quot;, :offset 10, :ns &quot;json-to-sql.core&quot;} {:command &quot;(type true)&quot;, :offset 11, :ns &quot;json-to-sql.core&quot;} {:command &quot;(type 1)&quot;, :offset 8, :ns &quot;json-to-sql.core&quot;} {:command &quot;(boolean a)&quot;, :offset 11, :ns &quot;json-to-sql.core&quot;} {:command &quot;(boolean true)&quot;, :offset 14, :ns &quot;json-to-sql.core&quot;} {:command &quot;(require 'clojure.core)&quot;, :offset 10, :ns &quot;json-to-sql.core&quot;} {:command &quot;(boolean? true)&quot;, :offset 15, :ns &quot;json-to-sql.core&quot;} {:command &quot;(instance? Boolean true)&quot;, :offset 24, :ns &quot;json-to-sql.core&quot;} {:command &quot;(instance? Boolean \&quot;aa\&quot;)&quot;, :offset 24, :ns &quot;json-to-sql.core&quot;} {:command &quot;(json-&gt;insert)&quot;, :offset 14, :ns &quot;json-to-sql.core&quot;} {:command &quot;(ns json-to-sql.insert\n  (:require [json-to-sql.util :as util]\n            [clojure.string :as s]))&quot;, :offset 99, :ns &quot;user&quot;} {:command &quot;(slurp test-json-file)&quot;, :offset 22, :ns &quot;json-to-sql.insert&quot;} {:command &quot;(ns json-to-sql.core\n  (:require [json-to-sql.insert :as insert]\n            [json-to-sql.update :as update]\n            [cheshire.core :as cheshire]))&quot;, :offset 151, :ns &quot;json-to-sql.insert&quot;} {:command &quot;(read_json)&quot;, :offset 11, :ns &quot;json-to-sql.core&quot;} {:command &quot;(ns)&quot;, :offset 4, :ns &quot;json-to-sql.core&quot;} {:command &quot;test-json-file&quot;, :offset 14, :ns &quot;json-to-sql.core&quot;} {:command &quot;(cheshire/parse-string (slurp test-json-file) true)&quot;, :offset 51, :ns &quot;json-to-sql.core&quot;} {:command &quot;(read_json test-json-file)&quot;, :offset 26, :ns &quot;json-to-sql.core&quot;} {:command &quot;(read-json test-json-file)&quot;, :offset 6, :ns &quot;json-to-sql.core&quot;} {:command &quot;(read-json update-json-file)&quot;, :offset 27, :ns &quot;json-to-sql.core&quot;} {:command &quot;(first [:a :b :c])&quot;, :offset 18, :ns &quot;json-to-sql.core&quot;} {:command &quot;(= :ket :ket)&quot;, :offset 13, :ns &quot;json-to-sql.core&quot;} {:command &quot;(= :ket :key)&quot;, :offset 13, :ns &quot;json-to-sql.core&quot;} {:command &quot;(first (filter #(not= % :conditions) (keys {:Users {:name \&quot;Joe Doe\&quot;, :address \&quot;Fake street 123\&quot;, :date_of_birth \&quot;01.01.1900\&quot;, :is_admin true, :card_no 123},\n                                            :condition {:id {:operation \&quot;eq\&quot;, :value 1}}})))&quot;, :offset 246, :ns &quot;json-to-sql.core&quot;} {:command &quot;(name (first (filter #(not= % :conditions) (keys {:Users {:name \&quot;Joe Doe\&quot;, :address \&quot;Fake street 123\&quot;, :date_of_birth \&quot;01.01.1900\&quot;, :is_admin true, :card_no 123},\n                                                  :condition {:id {:operation \&quot;eq\&quot;, :value 1}}}))))&quot;, :offset 258, :ns &quot;json-to-sql.core&quot;} {:command &quot;(name (first (filter #(or (not= % :conditions) (not= % :pera)) (keys {:pera \&quot;aaa\&quot; :Users {:name \&quot;Joe Doe\&quot;, :address \&quot;Fake street 123\&quot;, :date_of_birth \&quot;01.01.1900\&quot;, :is_admin true, :card_no 123},\n                                                  :condition {:id {:operation \&quot;eq\&quot;, :value 1}}}))))&quot;, :offset 60, :ns &quot;json-to-sql.core&quot;} {:command &quot;(name (first (filter #(and (not= % :conditions) (not= % :pera)) (keys {:pera \&quot;aaa\&quot; :Users {:name \&quot;Joe Doe\&quot;, :address \&quot;Fake street 123\&quot;, :date_of_birth \&quot;01.01.1900\&quot;, :is_admin true, :card_no 123},\n                                                  :condition {:id {:operation \&quot;eq\&quot;, :value 1}}}))))&quot;, :offset 210, :ns &quot;json-to-sql.core&quot;} {:command &quot;(doseq [[key val] (seq {:a 1 :b 2})] (println (str key \&quot;=\&quot; val)))&quot;, :offset 65, :ns &quot;user&quot;} {:command &quot;(doseq [[key val] (seq {:a 1 :b 2})] (println (str (name key) \&quot;=\&quot; val)))&quot;, :offset 72, :ns &quot;user&quot;} {:command &quot;(json-to-sql.update (read-json update-json-file))&quot;, :offset 49, :ns &quot;json-to-sql.core&quot;} {:command &quot;(json-to-sql.update (json-util/json-&gt;map update-json-file))&quot;, :offset 59, :ns &quot;json-to-sql.core&quot;} {:command &quot;(update (json-util/json-&gt;map update-json-file))&quot;, :offset 47, :ns &quot;json-to-sql.core&quot;} {:command &quot;(json-&gt;update (json-util/json-&gt;map update-json-file))&quot;, :offset 53, :ns &quot;json-to-sql.core&quot;} {:command &quot;(def )&quot;, :offset 5} {:command &quot;(def a (json-util/json-&gt;map update-json-file))&quot;, :offset 46, :ns &quot;json-to-sql.core&quot;} {:command &quot;(:conditions a)&quot;, :offset 15, :ns &quot;json-to-sql.core&quot;} {:command &quot;(json-util/json-&gt;map update-json-file)&quot;, :offset 38, :ns &quot;json-to-sql.core&quot;} {:command &quot;(doseq [[k v] {:a 1 :b 2}] (s/join \&quot;, \&quot; (str (name k) \&quot; = \&quot; v)))&quot;, :offset 64, :ns &quot;json-to-sql.core&quot;} {:command &quot;(doseq [[k v] {:a 1 :b 2}] (str (name k) \&quot; = \&quot; v))&quot;, :offset 50, :ns &quot;json-to-sql.core&quot;} {:command &quot;(doseq [[k v] {:a 1 :b 2}] (str k \&quot; = \&quot; v))&quot;, :offset 43, :ns &quot;json-to-sql.core&quot;} {:command &quot;(doseq [[k v] {:a 1 :b 2}] (println (str k \&quot; = \&quot; v)))&quot;, :offset 53, :ns &quot;json-to-sql.core&quot;} {:command &quot;(seq {:a 1 :b 2})&quot;, :offset 17, :ns &quot;json-to-sql.core&quot;} {:command &quot;(println ([k v] {:a 1}))&quot;, :offset 24, :ns &quot;json-to-sql.core&quot;} {:command &quot;(println (([k v] {:a 1}) k))&quot;, :offset 28, :ns &quot;json-to-sql.core&quot;} {:command &quot;(let [{:k v} {:a 1}]\n  (println (str :k \&quot; \&quot; v)))&quot;, :offset 48, :ns &quot;json-to-sql.core&quot;} {:command &quot;(let [[k v] {:a 1}]\n  (println (str k \&quot; \&quot; v)))&quot;, :offset 46, :ns &quot;json-to-sql.core&quot;} {:command &quot;(let [{[k v]} {:a 1}]\n  (println (str k \&quot; \&quot; v)))&quot;, :offset 43, :ns &quot;json-to-sql.core&quot;} {:command &quot;(let [{:k v} {:a 1}]\n  (println (str k \&quot; \&quot; v)))&quot;, :offset 47, :ns &quot;json-to-sql.core&quot;} {:command &quot;(let [{:k [a b]} {:a 1}]\n  (println (str a \&quot; \&quot; b)))&quot;, :offset 51, :ns &quot;json-to-sql.core&quot;} {:command &quot;(seq {:a 1 :b 2 :c 2})&quot;, :offset 22, :ns &quot;json-to-sql.core&quot;} {:command &quot;(seq [:a 1])&quot;, :offset 12, :ns &quot;json-to-sql.core&quot;} {:command &quot;([a b] [:a 2])&quot;, :offset 14, :ns &quot;json-to-sql.core&quot;} {:command &quot;(let [[a b] (seq {:a 1})] (str a \&quot; \&quot; b))&quot;, :offset 40, :ns &quot;json-to-sql.core&quot;} {:command &quot;(for [seq (seq {:name Joe Doe, :address Fake street 123, :date_of_birth 01.01.1900, :is_admin true, :card_no 123}\n               )]\n  (println seq))&quot;, :offset 148, :ns &quot;json-to-sql.core&quot;} {:command &quot;(for [seq (seq {:name \&quot;a\&quot;, :address \&quot;b\&quot;, :date_of_birth \&quot;c\&quot;, :is_admin true, :card_no 123})]\n  (println seq))&quot;, :offset 109, :ns &quot;json-to-sql.core&quot;} {:command &quot;(for [seq (seq {:name \&quot;a\&quot;, :address \&quot;b\&quot;, :date_of_birth \&quot;c\&quot;, :is_admin true, :card_no 123})]\n  (let [[k v] seq]\n    (println (str k \&quot; = \&quot; v))))&quot;, :offset 143, :ns &quot;json-to-sql.core&quot;} {:command &quot;(let [[k v] [:a 1]]\n  (str k \&quot;, \&quot; v))&quot;, :offset 37, :ns &quot;json-to-sql.core&quot;} {:command &quot;(for [seq [[:a 1] [:b 2]]]\n  (let [[k v] [:a 1]]\n    (str k \&quot;, \&quot; v)))&quot;, :offset 69, :ns &quot;json-to-sql.core&quot;} {:command &quot;(get-column-values {:a 1, :b 2, :c 3})&quot;, :offset 38, :ns &quot;json-to-sql.update&quot;} {:command &quot;(into [] (get-column-values {:a 1, :b 2, :c 3}))&quot;, :offset 48, :ns &quot;json-to-sql.update&quot;} {:command &quot;(s/join \&quot;, \&quot; (into [] (s/join \&quot; = \&quot; (into [] (get-column-values map)))))&quot;, :offset 72, :ns &quot;json-to-sql.update&quot;} {:command &quot;(s/join \&quot;, \&quot; (into [] (s/join \&quot; = \&quot; (get-column-values map))))&quot;, :offset 62, :ns &quot;json-to-sql.update&quot;} {:command &quot;(s/join \&quot;, \&quot; (into [] (s/join \&quot; = \&quot; (get-column-values {:a 1, :b 2}))))&quot;, :offset 71, :ns &quot;json-to-sql.update&quot;} {:command &quot;(s/join \&quot;, \&quot; (into [] (s/join \&quot; = \&quot; (into [] (get-column-values {:a 1 :b 2})))))&quot;, :offset 74, :ns &quot;json-to-sql.update&quot;} {:command &quot;(str \&quot;a\&quot; \&quot;b\&quot;)&quot;, :offset 13, :ns &quot;json-to-sql.core&quot;} {:command &quot;(json-&gt;insert insert-json-file)&quot;, :offset 31, :ns &quot;json-to-sql.core&quot;} {:command &quot;(json-&gt;update update -json-file)&quot;, :offset 32, :ns &quot;json-to-sql.core&quot;} {:command &quot;(ns json-&gt;update)&quot;, :offset 17, :ns &quot;json-to-sql.core&quot;} {:command &quot;(ns json-to-sql.update)&quot;, :offset 23, :ns &quot;json-&gt;update&quot;} {:command &quot;(get-column-values {:name Joe Doe, :address Fake street 123, :date_of_birth 01.01.1900, :is_admin true, :card_no 123})&quot;, :offset 118, :ns &quot;json-to-sql.update&quot;} {:command &quot;(get-column-values {:name \&quot;pera\&quot;, :admin \&quot;true\&quot;})&quot;, :offset 49, :ns &quot;json-to-sql.update&quot;} {:command &quot;(ns json-to-sql.core)&quot;, :offset 21, :ns &quot;json-to-sql.update&quot;} {:command &quot;(json-&gt;update update-json-file)&quot;, :offset 31, :ns &quot;json-to-sql.core&quot;}], :remote []}}</component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -342,7 +325,7 @@
     <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13682093" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13682093" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -366,7 +349,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="REPL" order="6" side_tool="true" visible="true" weight="0.2977867" />
+      <window_info active="true" anchor="right" id="REPL" order="6" side_tool="true" visible="true" weight="0.3373575" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.32992172" />
       <window_info anchor="right" id="Maven" order="9" />
@@ -422,34 +405,6 @@
     <entry file="file://$PROJECT_DIR$/LICENSE">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/json_to_sql/select.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="55" lean-forward="true" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/json_to_sql/update.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/json_to_sql/delete.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="60" selection-start-line="4" selection-start-column="60" selection-end-line="4" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/json_to_sql/insert.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="44" lean-forward="true" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/json_to_sql/json_util.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -471,20 +426,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/json_to_sql/core.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/select.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="20" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/insert.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -492,17 +433,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/select.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/json_to_sql/insert.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="44" lean-forward="true" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/json_to_sql/update.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="54" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/update.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="20" selection-end-column="1" />
+        <state relative-caret-position="323">
+          <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/json_to_sql/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/json_to_sql/select.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="107" selection-start-line="14" selection-start-column="27" selection-end-line="16" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/json_to_sql/delete.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="52" lean-forward="true" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/delete.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        <state relative-caret-position="221">
+          <caret line="13" column="3" lean-forward="true" selection-start-line="1" selection-start-column="13" selection-end-line="13" selection-end-column="3" />
         </state>
       </provider>
     </entry>
