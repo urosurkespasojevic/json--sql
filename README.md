@@ -13,7 +13,7 @@ To include library add following to your ```dependencies``` ```[json-to-sql "0.1
 
 ## Usage
 
-JSON must have top level object with 2 properties. First property represents the name of the database table. Depend on which SQL command you want to get that propery can be empty object or object with properties and its values. Second property should be named "conditions" and to represents an array of objects with following properties: "column", "operation" and "value".
+JSON must have top level object with 2 properties. First property represents the name of the database table. Depend on which SQL command you want to get that propery can be empty object or object with properties and its values. Second property should be named "conditions" and to represents an array of objects with following properties: "column", "operation" and "value". Conditions property is not required. If it is empty list or does not exist SQL command will not contain ```WHERE``` part of SQL command.
 
 ### JSON Example
 
