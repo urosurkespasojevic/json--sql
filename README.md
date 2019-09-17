@@ -83,7 +83,7 @@ To get **SELECT** SQL query you can call ```(json->select select-json-file)```.
 }
 ```
 
-**SELECT**: ```SELECT * FROM Users WHERE name LIKE 'Fake' AND card_no = 123```
+**SELECT**: ```SELECT * FROM Users WHERE name LIKE 'Fake' AND card_no = 123```  
 **JSON**:
 ```
 {
@@ -109,7 +109,7 @@ To get **SELECT** SQL query you can call ```(json->select select-json-file)```.
 
 To get **INSERT** SQL statement you can call ```(json->insert insert-json-file)```.
 
-**INSERT**: ```INSERT INTO Users (name, address, date_of_birth, is_admin, card_no) VALUES ('Joe Doe', 'Fake street 123', '01.01.1900', 1, 123)```
+**INSERT**: ```INSERT INTO Users (name, address, date_of_birth, is_admin, card_no) VALUES ('Joe Doe', 'Fake street 123', '01.01.1900', 1, 123)```  
 **JSON**:
 ```
 {
@@ -127,7 +127,7 @@ To get **INSERT** SQL statement you can call ```(json->insert insert-json-file)`
 
 To get **UPDATE** SQL statement you can call ```(json->update update-json-file)```.
 
-**UPDATE**: ```UPDATE Users SET name = 'Joe Doe', address = 'Fake street 123', date_of_birth = '01.01.1900', is_admin = 1, card_no = 123 WHERE name LIKE 'Fake' AND card_no = 123```
+**UPDATE**: ```UPDATE Users SET name = 'Joe Doe', address = 'Fake street 123', date_of_birth = '01.01.1900', is_admin = 1, card_no = 123 WHERE name LIKE 'Fake' AND card_no = 123```  
 **JSON**:
 ```
 {
@@ -157,7 +157,7 @@ To get **UPDATE** SQL statement you can call ```(json->update update-json-file)`
 
 To get **DELETE** SQL statement you can call ```(json->delete delete-json-file)```.
 
-**DELETE**: ```DELETE FROM Users WHERE name LIKE 'Fake' AND card_no = 123```
+**DELETE**: ```DELETE FROM Users WHERE name LIKE 'Fake' AND card_no = 123```  
 **JSON**:
 ```
 {
