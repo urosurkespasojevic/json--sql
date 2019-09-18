@@ -7,7 +7,6 @@
 (defn statement
   "Gets SELECT SQL query for table name with conditions"
   [table-name conditions map]
-  (println conditions)
   (let [names (sql-util/get-column-names map)]
     (sql-util/map->sql
       (sql-util/map->sql
